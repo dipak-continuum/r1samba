@@ -1,0 +1,8 @@
+Package: r1samba
+Version: __VERSION__
+Section: base
+Priority: required
+Architecture: amd64
+Depends: debconf (>= 0.2.26)
+Maintainer: R1Soft Development <Development@r1soft.com>
+Description: R1Soft SAMBA package
