@@ -1,0 +1,9 @@
+#!/bin/sh
+
+CHECK="`/usr/bin/pgrep smbd`"
+if [ ! -z "${CHECK}" ]; then
+        echo "SAMBA is running. Please stop smbd before un-installing."
+        exit 1
+fi
+
+mkdir -p /opt/dummy_dir
