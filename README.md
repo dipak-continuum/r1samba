@@ -1,8 +1,13 @@
 # r1samba
 
-# document to install dependecies for the SAMBA
+# Document to install dependecies for the SAMBA
 https://continuum.atlassian.net/l/c/z61B1hLD
 
-$ make configure
+```
+# Run default targets
 $ make
+
+# Create Debian packages
 $ make release
+
+```
