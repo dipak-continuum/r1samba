@@ -4,13 +4,13 @@ ifndef VERSION_BUILD
 VERSION_BUILD=0
 endif
 
-LINUX_DISTRO := $(strip $(shell lsb_release -i | cut -d':' -f2))
-OS_VERSION := $(strip $(shell lsb_release -r | cut -d':' -f2))
+# LINUX_DISTRO := $(strip $(shell lsb_release -i | cut -d':' -f2))
+# OS_VERSION := $(strip $(shell lsb_release -r | cut -d':' -f2))
 OS_PLATFORM := $(shell uname -m)
 
 PKG_NAME=r1samba
 PKG_VERSION=$(VERSION_MAJOR).$(VERSION_MINOR).$(VERSION_MAINT)-$(VERSION_BUILD)
-PKG_NAME_FULL=$(PKG_NAME)_$(PKG_VERSION).$(LINUX_DISTRO)$(OS_VERSION).$(OS_PLATFORM)
+PKG_NAME_FULL=$(PKG_NAME)_$(PKG_VERSION).$(OS_PLATFORM)
 
 #depends versions
 NETTLE_VER=3.5
